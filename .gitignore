@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+*/__pycache__/*
+*.pyc
+*$py.class
+
+# Mac
+.DS_Store
+*/.DS_Store
+
+# PyTorch
+
+*.pt
+*.pdf
+*.png
+*.swp
+.vscode
+experiment
+dataset
+/.idea/
+/.idea/inspectionProfiles/
+/.idea/.gitignore
+/.idea/Linear_constraint.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+#*.sh
+#configs

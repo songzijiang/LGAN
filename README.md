@@ -1,3 +1,54 @@
-# MMAN
+## LGAN
+Source codes for ["A Lightweight Local-Global Attention Network for Single Image Super-Resolution"]().
 
-Source code will be available soon.
+## Step 1: Install environment
+The required environment is listed in 'env.yaml', please install the environment before training.
+
+## Step 2: Edit config file
+Settings can be edited in 'configs/config.yml'.
+
+## Step 3: Prepare the dataset
+You can download the dataset from [here]().
+```
+|/SR_datasets
+|-|/DIV2K
+|-|-|/DIV2K_train_HR/
+|-|-|/DIV2K_train_LR_bicubic/
+|-|/benchmark
+|-|-|/B100
+|-|-|-|/HR
+|-|-|-|/LR_bicubic
+|-|-|/Manga109
+|-|-|-|/HR
+|-|-|-|/LR_bicubic
+|-|-|/Set14
+|-|-|-|/HR
+|-|-|-|/LR_bicubic
+|-|-|/Set5
+|-|-|-|/HR
+|-|-|-|/LR_bicubic
+|-|-|/Urban100
+|-|-|-|/HR
+|-|-|-|/LR_bicubic
+```
+
+## Step 4: Train the network
+Run
+```
+sh train.sh
+```
+
+## Step 5: Evaluate the network
+To evaluate the network, you should specify the argument 'pretrain' in 'configs/config.yaml' first.
+And run
+```
+sh test.sh
+```
+The visual result produced by LGAN can be obtained [here]().
+
+## Thanks
+The codes are implemented based on [ELAN](https://github.com/xindongzhang/ELAN).
+
+A neat network framework is necessary for SISR and allows us to focus more on improving the structure of network.
+We are grateful for [ELAN](https://github.com/xindongzhang/ELAN).
+
