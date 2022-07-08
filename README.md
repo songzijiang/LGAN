@@ -8,7 +8,7 @@ The required environment is listed in 'env.yaml', please install the environment
 Settings can be edited in 'configs/config.yml'.
 
 ## Step 3: Prepare the dataset
-You can download the dataset from [here]().
+You can download the dataset from [here](https://drive.google.com/file/d/1m4dZ1CARTohwu6tOznHtS-XjC4hnwCgm/view?usp=sharing).
 ```
 |/SR_datasets
 |-|/DIV2K
@@ -44,7 +44,7 @@ And run
 ```
 sh test.sh
 ```
-The visual result produced by LGAN can be obtained [here]().
+The visual result produced by LGAN can be obtained [here](https://drive.google.com/file/d/1WUxKDC3n07UIK0QFolREgTdwABwBWobU/view?usp=sharing).
 
 ## Thanks
 The codes are implemented based on [ELAN](https://github.com/xindongzhang/ELAN).
