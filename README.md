@@ -39,7 +39,7 @@ sh train.sh
 ```
 
 ## Step 5: Evaluate the network
-To evaluate the network, you should specify the argument 'pretrain' in 'configs/config.yaml' first.
+To evaluate the network, you should specify the parameter 'pretrain' in 'configs/config.yaml' first.
 And run
 ```
 sh test.sh
