@@ -1,5 +1,6 @@
 ## LGAN
 Source codes for ["A Lightweight Local-Global Attention Network for Single Image Super-Resolution"](). It is accepted by [ACCV2022](https://accv2022.org/).
+When the paper is available online, we will cite it immediately.
 
 ## Step 1: Install environment
 The required environment is listed in 'env.yaml', please install the environment before training.
@@ -37,8 +38,11 @@ Run
 ```
 sh train.sh
 ```
-or you can download [pre-trained models](https://drive.google.com/file/d/141eRsRVGYDe-zzxF_bzYi8IyZzNP9-fd/view?usp=sharing, https://drive.google.com/file/d/15GS6tapZC57Hr9OnBfJLcXvP8WkNACSz/view?usp=sharing, https://drive.google.com/file/d/1F3lasAWstsEVfaQefX1HiRAprOk5txvQ/view?usp=sharing)
-
+or you can download pre-trained models
+[x2](https://drive.google.com/file/d/141eRsRVGYDe-zzxF_bzYi8IyZzNP9-fd/view?usp=sharing)
+[x3](https://drive.google.com/file/d/15GS6tapZC57Hr9OnBfJLcXvP8WkNACSz/view?usp=sharing)
+[x4](https://drive.google.com/file/d/1F3lasAWstsEVfaQefX1HiRAprOk5txvQ/view?usp=sharing).
+NOTE: PSNR and SSIM listed in paper is calculated by matlab program. The result calculated by Python program may be slightly inconsistent with the paper.
 ## Step 5: Evaluate the network
 To evaluate the network, you should specify the parameter 'pretrain' in 'configs/config.yaml' first.
 And run
@@ -49,7 +53,4 @@ The visual result produced by LGAN can be obtained [here](https://drive.google.c
 
 ## Thanks
 The codes are implemented based on [ELAN](https://github.com/xindongzhang/ELAN).
-
-A neat network framework is necessary for SISR and allows us to focus more on improving the structure of network.
-We are grateful for [ELAN](https://github.com/xindongzhang/ELAN).
 
