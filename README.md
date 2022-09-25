@@ -37,6 +37,7 @@ Run
 ```
 sh train.sh
 ```
+or you can download [pre-trained models](https://drive.google.com/file/d/141eRsRVGYDe-zzxF_bzYi8IyZzNP9-fd/view?usp=sharing, https://drive.google.com/file/d/15GS6tapZC57Hr9OnBfJLcXvP8WkNACSz/view?usp=sharing, https://drive.google.com/file/d/1F3lasAWstsEVfaQefX1HiRAprOk5txvQ/view?usp=sharing)
 
 ## Step 5: Evaluate the network
 To evaluate the network, you should specify the parameter 'pretrain' in 'configs/config.yaml' first.
