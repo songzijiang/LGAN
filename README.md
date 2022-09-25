@@ -1,5 +1,5 @@
 ## LGAN
-Source codes for ["A Lightweight Local-Global Attention Network for Single Image Super-Resolution"]().
+Source codes for ["A Lightweight Local-Global Attention Network for Single Image Super-Resolution"](). It is accepted by [ACCV2022](https://accv2022.org/).
 
 ## Step 1: Install environment
 The required environment is listed in 'env.yaml', please install the environment before training.
