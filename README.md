@@ -9,7 +9,7 @@ Settings can be edited in 'configs/config.yml'.
 
 ## Step 3: Prepare the dataset
 You can download the dataset from [here](https://drive.google.com/file/d/1m4dZ1CARTohwu6tOznHtS-XjC4hnwCgm/view?usp=sharing).
-```
+``` 
 |/SR_datasets
 |-|/DIV2K
 |-|-|/DIV2K_train_HR/
