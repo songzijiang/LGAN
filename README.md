@@ -3,10 +3,23 @@ If you have any questions, please feel free to contact us.
 email me at: zjsong@stu.suda.edu.cn 
 
 or create a new issue directly.
-## LGAN
+# LGAN
+## Information
 Source codes for ["A Lightweight Local-Global Attention Network for Single Image Super-Resolution"](). It is accepted by [ACCV2022](https://accv2022.org/).
 When the paper is available online, we will cite it immediately.
+### The structure of LGAN is shown as follows:
+![network](imgs/network.jpg)
+### The structure of LGAB is shown as follows:
+![LGAB](imgs/LGAB.jpg)
+### How the feature maps reshaped is described in the figure:
+![LRA](imgs/LRA.jpg)
+### The visual comparison is shown as follows:
+![visual](imgs/visual.jpg)
+### Performance Evaluation:
+![Performance_Evaluation](imgs/Performance_Evaluation.jpg)
 
+Please check the [paper]() for more details.
+# Steps
 ## Step 1: Install environment
 The required environment is listed in 'env.yaml', please install the environment before training.
 
@@ -57,6 +70,6 @@ sh test.sh
 ```
 The visual result produced by LGAN can be obtained [here](https://drive.google.com/file/d/1WUxKDC3n07UIK0QFolREgTdwABwBWobU/view?usp=sharing).
 
-## Thanks
+# Thanks
 The codes are implemented based on [ELAN](https://github.com/xindongzhang/ELAN).
 
