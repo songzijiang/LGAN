@@ -5,8 +5,7 @@ email me at: zjsong@stu.suda.edu.cn
 or create a new issue directly.
 # LGAN
 ## Information
-Source codes for ["A Lightweight Local-Global Attention Network for Single Image Super-Resolution"](). It is accepted by [ACCV2022](https://accv2022.org/).
-When the paper is available online, we will cite it immediately.
+Source codes for ["A Lightweight Local-Global Attention Network for Single Image Super-Resolution"](https://openaccess.thecvf.com/content/ACCV2022/papers/Song_A_Lightweight_Local-Global_Attention_Network_for_Single_Image_Super-Resolution_ACCV_2022_paper.pdf). It is accepted by [ACCV2022](https://accv2022.org/).
 ### The structure of LGAN is shown as follows:
 ![network](imgs/network.jpg)
 ### The structure of LGAB is shown as follows:
