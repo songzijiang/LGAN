@@ -17,7 +17,7 @@ Source codes for ["A Lightweight Local-Global Attention Network for Single Image
 ### Performance Evaluation:
 ![Performance_Evaluation](imgs/Performance_Evaluation.jpg)
 
-Please check the [paper]() for more details.
+Please check the [paper](https://openaccess.thecvf.com/content/ACCV2022/papers/Song_A_Lightweight_Local-Global_Attention_Network_for_Single_Image_Super-Resolution_ACCV_2022_paper.pdf) for more details.
 # Steps
 ## Step 1: Install environment
 The required environment is listed in 'env.yaml', please install the environment before training.
