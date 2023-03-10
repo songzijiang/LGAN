@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from models.m_block import FEB, MeanShift
 
+
 def create_model(args):
     return LGAN(args)
 
@@ -67,10 +68,13 @@ class LGAN(nn.Module):
         x = F.pad(x, (0, mod_pad_w, 0, mod_pad_h), 'reflect')
         return x
 
-    def load(self, state_dict, strict=True):
+    def load(self, state_dict, strict=True, compatibility=True):
         own_state = self.state_dict()
         for name, param in state_dict.items():
             name = name[name.index('.') + 1:]
+            #         compatibility mode
+            if compatibility:
+                name = name.replace('modules_lfe.lfe_0', 'FD').replace('modules_gmsa.gmsa_0', 'LGAB')
             if name in own_state:
                 if isinstance(param, nn.Parameter):
                     param = param.data

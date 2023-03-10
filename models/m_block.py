@@ -111,9 +111,9 @@ class FD(nn.Module):
         return y
 
 
-class LGAN(nn.Module):
+class LGAB(nn.Module):
     def __init__(self, channels, window_size=5):
-        super(LGAN, self).__init__()
+        super(LGAB, self).__init__()
         self.window_size = window_size
         self.split_chns = [channels * 2 // 3 for _ in range(3)]
         self.project_inp = nn.Sequential(nn.Conv2d(channels, channels * 2, kernel_size=1),
@@ -181,9 +181,9 @@ class FEB(nn.Module):
         self.inp_channels = inp_channels
         self.out_channels = out_channels
         self.FD = FD(inp_channels=inp_channels, out_channels=out_channels, exp_ratio=exp_ratio, act_type=act_type)
-        self.LGAN = LGAN(channels=inp_channels, window_size=window_size)
+        self.LGAB = LGAB(channels=inp_channels, window_size=window_size)
 
     def forward(self, x):
-        x = self.LGAN(x) + x
+        x = self.LGAB(x) + x
         x = self.FD(x) + x
         return x
