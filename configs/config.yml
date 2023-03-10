@@ -37,6 +37,6 @@ gpu_ids: [1]
 threads: 16
 
 ## data specification
-data_path: './SR_datasets'
+data_path: '../SR_datasets'
 eval_sets: ['Set5', 'Set14']
 #eval_sets: ['Set5', 'Set14', 'B100', 'Urban100', 'Manga109']
