@@ -1,0 +1,1 @@
+python test_custom_image.py --config ./configs/config.yml
