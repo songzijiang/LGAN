@@ -31,6 +31,7 @@ log_every: 100
 test_every: 1
 log_path: "./experiments"
 log_name:
+custom_image_path:
 
 ## hardware specification
 gpu_ids: [0]
