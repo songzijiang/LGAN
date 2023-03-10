@@ -106,10 +106,10 @@ filePath = args.custom_image_path
 for filename in tqdm(os.listdir(filePath), ncols=80):
     lr = imageio.imread(filePath + os.sep + filename, pilmode="RGB")
     lr = ndarray2tensor(lr)
+    lr=torch.unsqueeze(lr, 0)
     if args.fp == 16:
         lr = lr.type(torch.HalfTensor)
     lr = lr.to(device)
-    print(lr.shape)
     sr = model(lr)
     # quantize output to [0, 255]
     sr = sr.clamp(0, 255).round()
