@@ -104,7 +104,7 @@ si.begin_background()
 
 filePath = args.custom_image_path
 for filename in tqdm(os.listdir(filePath), ncols=80):
-    lr = imageio.imread(filename, pilmode="RGB")
+    lr = imageio.imread(filePath + os.sep + filename, pilmode="RGB")
     if args.fp == 16:
         lr = lr.type(torch.HalfTensor)
     lr = lr.to(device)
