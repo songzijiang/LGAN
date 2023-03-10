@@ -109,6 +109,7 @@ for filename in tqdm(os.listdir(filePath), ncols=80):
     if args.fp == 16:
         lr = lr.type(torch.HalfTensor)
     lr = lr.to(device)
+    print(lr.shape)
     sr = model(lr)
     # quantize output to [0, 255]
     sr = sr.clamp(0, 255).round()
