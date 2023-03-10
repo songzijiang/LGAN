@@ -112,7 +112,6 @@ for valid_dataloader in valid_dataloaders:
         if args.fp == 16:
             lr, hr = lr.type(torch.HalfTensor), hr.type(torch.HalfTensor)
         lr, hr = lr.to(device), hr.to(device)
-        print(lr.shape)
         sr = model(lr)
 
         # quantize output to [0, 255]

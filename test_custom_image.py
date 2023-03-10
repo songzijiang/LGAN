@@ -116,7 +116,7 @@ for filename in tqdm(os.listdir(filePath), ncols=80):
     path = save_path + os.sep + 'custom' + os.sep
     if not os.path.exists(path):
         os.makedirs(path)
-    fileUname, ext = filename.split('.')[:-1], filename.split('.')[-1]
+    fileUname, ext = '.'.join(filename.split('.')[:-1]), filename.split('.')[-1]
     path += (fileUname + '_x' + str(args.scale) + '_SR' + '.' + ext)
     si.save_results(path, sr)
 
