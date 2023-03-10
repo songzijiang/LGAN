@@ -14,7 +14,7 @@ from multiprocessing import Process
 from multiprocessing import Queue
 import time
 import os
-
+from utils import ndarray2tensor
 
 class save_img():
     def __init__(self):
@@ -105,6 +105,7 @@ si.begin_background()
 filePath = args.custom_image_path
 for filename in tqdm(os.listdir(filePath), ncols=80):
     lr = imageio.imread(filePath + os.sep + filename, pilmode="RGB")
+    lr = ndarray2tensor(lr)
     if args.fp == 16:
         lr = lr.type(torch.HalfTensor)
     lr = lr.to(device)
