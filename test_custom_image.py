@@ -16,6 +16,7 @@ import time
 import os
 from utils import ndarray2tensor
 
+
 class save_img():
     def __init__(self):
         self.n_processes = 32
@@ -70,7 +71,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '{}'.format(gpu_ids_str)
 
 ## select active gpu devices
 device = None
-if args.gpu_ids is not None and torch.cuda.is_available():
+if len(args.gpu_ids) > 0 and torch.cuda.is_available():
     print('use cuda & cudnn for acceleration!')
     print('the gpu id is: {}'.format(args.gpu_ids))
     device = torch.device('cuda')
@@ -106,7 +107,7 @@ filePath = args.custom_image_path
 for filename in tqdm(os.listdir(filePath), ncols=80):
     lr = imageio.imread(filePath + os.sep + filename, pilmode="RGB")
     lr = ndarray2tensor(lr)
-    lr=torch.unsqueeze(lr, 0)
+    lr = torch.unsqueeze(lr, 0)
     if args.fp == 16:
         lr = lr.type(torch.HalfTensor)
     lr = lr.to(device)
