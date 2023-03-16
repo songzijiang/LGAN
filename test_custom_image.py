@@ -92,7 +92,7 @@ if args.fp == 16:
 ## load pretrain
 if args.pretrain is not None:
     print('load pretrained model: {}!'.format(args.pretrain))
-    ckpt = torch.load(args.pretrain)
+    ckpt = torch.load(args.pretrain,map_location=device)
     model.load(ckpt['model_state_dict'])
 
 model = nn.DataParallel(model).to(device)
