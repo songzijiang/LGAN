@@ -92,7 +92,7 @@ if args.fp == 16:
 ## load pretrain
 if args.pretrain is not None:
     print('load pretrained model: {}!'.format(args.pretrain))
-    ckpt = torch.load(args.pretrain,map_location=device)
+    ckpt = torch.load(args.pretrain, map_location=device)
     model.load(ckpt['model_state_dict'])
 
 model = nn.DataParallel(model).to(device)
@@ -105,7 +105,7 @@ si.begin_background()
 
 filePath = args.custom_image_path
 for filename in tqdm(os.listdir(filePath), ncols=80):
-    lr = imageio.imread(filePath + os.sep + filename, pilmode="RGB")
+    lr = imageio.imread(filePath + os.sep + filename)
     lr = ndarray2tensor(lr)
     lr = torch.unsqueeze(lr, 0)
     if args.fp == 16:
