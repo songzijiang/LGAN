@@ -105,7 +105,7 @@ si.begin_background()
 
 filePath = args.custom_image_path
 for filename in tqdm(os.listdir(filePath), ncols=80):
-    lr = imageio.imread(filePath + os.sep + filename)
+    lr = imageio.imread(filePath + os.sep + filename, pilmode="RGB")
     lr = ndarray2tensor(lr)
     lr = torch.unsqueeze(lr, 0)
     if args.fp == 16:
