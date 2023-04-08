@@ -13,7 +13,8 @@ Source codes for ["A Lightweight Local-Global Attention Network for Single Image
 ### How the feature maps reshaped is described in the figure:
 ![LRA](imgs/LRA.jpg)
 ### The visual comparison is shown as follows:
-![visual](imgs/visual.jpg)
+![visual](imgs/visualm.jpg)
+![visual](imgs/visualu.jpg)
 ### Performance Evaluation:
 ![Performance_Evaluation](imgs/Performance_Evaluation.jpg)
 
