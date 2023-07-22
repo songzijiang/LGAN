@@ -15,7 +15,7 @@ fp: 32
 loss: 'SmoothL1Loss'
 #loss: 'L1Loss'
 window_sizes: [15,10,5]
-pretrain: './pre_trained_models/model_x4_182.pt'
+pretrain: '../pre_trained_models/model_x4_182.pt'
 
 ## parameters for model training
 patch_size: 60
