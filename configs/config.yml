@@ -1,5 +1,5 @@
 model: 'm'
-scale: 2
+scale: 4
 rgb_range: 255
 colors: 3
 n_lgab: 24
@@ -15,7 +15,7 @@ fp: 32
 loss: 'SmoothL1Loss'
 #loss: 'L1Loss'
 window_sizes: [15,10,5]
-pretrain:
+pretrain: './pre_trained_models/model_x4_182.pt'
 
 ## parameters for model training
 patch_size: 60
@@ -31,7 +31,7 @@ log_every: 100
 test_every: 1
 log_path: "./experiments"
 log_name:
-custom_image_path:
+custom_image_path: './custom_image'
 
 ## hardware specification
 gpu_ids: [0]
