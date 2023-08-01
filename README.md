@@ -24,7 +24,7 @@ Please check the [paper](https://openaccess.thecvf.com/content/ACCV2022/papers/S
 The required environment is listed in 'env.yaml', please install the environment before training.
 
 ## Step 2: Edit config file
-Settings can be edited in 'configs/config.yml'.
+Settings can be edited in 'configs/config.yml'. If you do not want to change the settings, you can rename the 'configs/config_default.yml' to 'configs/config.yml'.
 
 ## Step 3: Prepare the dataset
 You can download the dataset from [here](https://drive.google.com/file/d/1m4dZ1CARTohwu6tOznHtS-XjC4hnwCgm/view?usp=sharing).
