@@ -14,7 +14,7 @@
 *.png
 *.swp
 .vscode
-experiment
+experiments
 dataset
 /.idea/
 /.idea/inspectionProfiles/

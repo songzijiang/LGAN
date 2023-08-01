@@ -1,3 +1,0 @@
-Total number of parameters:650k
-##===========-fp32-training, Epoch: 1, lr: [0.0001] =============##
-Epoch:01, 03200/64000, loss: 2.9421, time: 50.305
