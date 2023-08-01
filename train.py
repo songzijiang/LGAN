@@ -126,7 +126,7 @@ if __name__ == '__main__':
             os.makedirs(experiment_model_path)
         ## save training paramters
         exp_params = vars(args)
-        exp_params_name = os.path.join(experiment_path, 'config.yml')
+        exp_params_name = os.path.join(experiment_path, 'config_default.yml')
         with open(exp_params_name, 'w') as exp_params_file:
             yaml.dump(exp_params, exp_params_file, default_flow_style=False)
 
