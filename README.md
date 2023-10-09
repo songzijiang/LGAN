@@ -1,6 +1,6 @@
 If you have any questions, please feel free to contact us.
 
-email me at: zjsong@stu.suda.edu.cn 
+email me at: jacksung1995@gmail.com 
 
 or create a new issue directly.
 # LGAN
